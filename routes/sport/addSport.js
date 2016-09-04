@@ -1,14 +1,12 @@
-/**
- * Created by samridhamla06 on 04/09/16.
- */
+
 var express = require('express');
-var Event = require('../../Model/Event.js');
+var Sport = require('../../Model/Sport.js');
 var router = express.Router();
 
 
 router.post('/', function (req, res) {
-    var newEvent = new Event(req.body);
-    newEvent.save(function(err){
+    var newSport = new Sport(req.body);
+    newSport.save(function(err){
         if (err){
             console.log("error is " + JSON.stringify(err.message));
             res.send({code: "401"});

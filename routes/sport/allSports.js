@@ -1,6 +1,3 @@
-/**
- * Created by samridhamla06 on 04/09/16.
- */
 var express = require('express');
 var Sport = require('../../Model/Sport.js');
 var router = express.Router();

@@ -3,11 +3,12 @@
  */
 var mongoose = require(__dirname + '/mongoose.js');
 var locationSchema = require('../Schemas/location.js');
+var offerSchema = require('../Schemas/offerSchema.js')
 var barSchema = new mongoose.Schema({
     name:{type : String, required:true,index:true},
     background_image_URL:{type:String},
     location:{type:locationSchema,required:true,index: '2dsphere'},
-    offers:[{type : mongoose.Schema.Types.ObjectId,ref : 'Offer'}],
+    offers:[offerSchema],
     city:{type : mongoose.Schema.Types.ObjectId,ref : 'City'},
     pincode:{type : String, required:true},
     landmark:{type : String},
