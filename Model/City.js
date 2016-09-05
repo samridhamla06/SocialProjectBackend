@@ -1,5 +1,6 @@
 var mongoose = require(__dirname + '/mongoose.js');
-var locationSchema = require('../Schemas/location.js');
+var locationSchema = require('../schemas/location.js');
+
 var citySchema = new mongoose.Schema({
     name:{type : String, required:true,unique:true,index:true},
     country:{type:String,required:true},
@@ -9,6 +10,6 @@ var citySchema = new mongoose.Schema({
     updatedAt:{type:Date,default: Date.now()}
 });
 
-
 var City = mongoose.model('City',citySchema);
+
 module.exports = City;
