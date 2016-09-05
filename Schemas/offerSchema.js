@@ -1,4 +1,5 @@
 var mongoose = require('../Model/mongoose.js');
+
 var offerSchema = new mongoose.Schema({
     offer_desc:{type : String, required:true},
     event_start_date:{type:Date,required:true},
