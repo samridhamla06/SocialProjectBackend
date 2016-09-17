@@ -13,6 +13,8 @@
     "firebase": "^3.3.0",
     "jade": "~1.11.0",
     "morgan": "~1.7.0",
-    "serve-favicon": "~2.3.0"
+    "serve-favicon": "~2.3.0",
+    "request":"~2.74.0",
+    "node-cricapi":"~1.2.5"
   }
 }
