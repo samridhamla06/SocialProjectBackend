@@ -2,13 +2,11 @@ var express = require('express');
 var router = express.Router();
 var request = require('request');
 
-router
-    .post('/register', function (req, res) {
+router.post('/register', function (req, res) {
         // TODO: save in the database this token
     });
 
-router
-    .post('/send', function (req, res) {
+router.post('/send', function (req, res) {
         var notification = req.params.notification;
         var deviceIds = req.params.deviceIds;
         sendDataToDevices(deviceIds, notification);
