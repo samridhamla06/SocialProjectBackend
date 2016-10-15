@@ -6,6 +6,8 @@ var bars = require(__dirname + '/routes/bars.js');
 var events = require(__dirname + '/routes/events.js');
 var sports = require(__dirname + '/routes/sports.js');
 var offers = require(__dirname + '/routes/offers.js');
+var scoreone = require(__dirname + '/routes/scoreone.js');
+var scoretwo = require(__dirname + '/routes/scoretwo.js');
 
 var bodyParser = require('body-parser');
 
@@ -26,6 +28,8 @@ app.use('/bars', bars);
 app.use('/events', events);
 app.use('/sports', sports);
 app.use('/offers', offers);
+app.use('/scoringone',scoreone);
+app.use('/scoringtwo',scoretwo);
 
 app.get('/', function (req, res) {
     res.send("Welcome to Hell Motherfucker");
