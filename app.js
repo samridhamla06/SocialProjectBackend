@@ -6,8 +6,7 @@ var bars = require(__dirname + '/routes/bars.js');
 var events = require(__dirname + '/routes/events.js');
 var sports = require(__dirname + '/routes/sports.js');
 var offers = require(__dirname + '/routes/offers.js');
-var scoreone = require(__dirname + '/routes/scoreone.js');
-var scoretwo = require(__dirname + '/routes/scoretwo.js');
+
 
 var bodyParser = require('body-parser');
 
